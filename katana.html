@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katana - ShinobiWay Wiki</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<main>
+
+    <img src="assets/categories/katana.png" alt="Katana" class="intro-image">
+
+    <div class="fire-header">
+        <h1 class="fire-title">⚔ KATANA</h1>
+    </div>
+
+    <div class="fire-box">
+
+        <div class="boss-content">
+
+            <div class="boss-left">
+
+<h2>Description</h2>
+
+<p class="material-text">
+    A standard-issue blade for shinobi just beginning their path as a warrior.
+</p>
+
+<h2>Drops From</h2>
+
+<p class="material-text">
+    <a href="ronin.html" class="wiki-link">Ronin</a>
+</p>
+
+<div class="mastery-box">
+    <span>WEAPON 250</span>
+    <span>MASTERY 250</span>
+</div>
+
+<h2>Attacks</h2>
+
+                <h3>Basic Attack (M1)</h3>
+
+                <p class="material-text">
+                    <strong>Normal:</strong> 31.6
+                    <br>
+                    <strong>Critical:</strong> 56.9
+                </p>
+
+                <hr class="skill-divider">
+
+                <h3>Blade Rush</h3>
+                
+                <strong>Mastery 1</strong>
+
+                <p class="material-text">
+                    Advances rapidly in a straight line, delivering a slash that deals
+                    <strong>99.5 damage.</strong>
+                </p>
+
+                <div class="chakra-box">
+                    <span>45 Chakra</span>
+                </div>
+
+                <hr class="skill-divider">
+
+                <h3>Air Slash</h3>
+
+                <strong>Mastery 25</strong>
+
+                <p class="material-text">
+                    Concentrates energy into the katana and releases a forward slash wave,
+                    dealing <strong>136.7 damage.</strong>
+                </p>
+
+                <div class="chakra-box">
+                    <span>60 Chakra</span>
+                </div>
+
+            </div>
+
+            <div class="boss-right">
+
+                <img src="assets/categories/katana.png"
+                     alt="Katana"
+                     class="boss-image">
+
+                <div class="lock-container">
+
+                    <img src="assets/categories/lockopen.png"
+                         class="lock-icon">
+
+                    <img src="assets/categories/lockopen.png"
+                         class="lock-icon">
+
+                    <img src="assets/categories/lockopen.png"
+                         class="lock-icon">
+
+                </div>
+
+                <div class="materials-box">
+
+                    <h2>Materials Required in Blacksmith</h2>
+
+                    <div class="material-item">
+
+                        <a href="wood.html">
+                            <img src="assets/categories/wood.png">
+                        </a>
+
+                        <span>
+                            <a href="wood.html" class="wiki-link">
+                                Wood
+                            </a>
+                        </span>
+
+                        <strong id="woodAmount">×10</strong>
+
+                    </div>
+
+                    <div class="material-item">
+
+                        <a href="scrapmetal.html">
+                            <img src="assets/categories/metal.png">
+                        </a>
+
+                        <span>
+                            <a href="scrapmetal.html" class="wiki-link">
+                                Scrap Metal
+                            </a>
+                        </span>
+
+                        <strong id="metalAmount">×10</strong>
+
+                    </div>
+
+                </div>
+
+                <img src="assets/categories/katanah.png"
+                     alt="Katana Skills"
+                     class="boss-image">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="page-navigation">
+
+        <div class="nav-side">
+            <a href="crowkatana.html" class="arrow">&larr;</a>
+            <span>Crow Katana</span>
+        </div>
+
+        <div class="nav-side">
+            <span>Crow Katana</span>
+            <a href="crowkatana.html" class="arrow">&rarr;</a>
+        </div>
+
+    </div>
+</main>
+<button id="theme-toggle">🌙</button>
+
+<script src="js/theme.js"></script>
+<script>
+
+const locks = document.querySelectorAll(".lock-icon");
+
+const wood = document.getElementById("woodAmount");
+const metal = document.getElementById("metalAmount");
+
+locks.forEach(lock => {
+
+    lock.dataset.locked = "false";
+
+    lock.addEventListener("click", () => {
+
+        if (lock.dataset.locked === "false") {
+
+            lock.src = "assets/categories/lockclosed.png";
+            lock.dataset.locked = "true";
+
+        } else {
+
+            lock.src = "assets/categories/lockopen.png";
+            lock.dataset.locked = "false";
+
+        }
+
+        updateMaterials();
+
+    });
+
+});
+
+function updateMaterials() {
+
+    let locked = 0;
+
+    locks.forEach(lock => {
+
+        if (lock.dataset.locked === "true") {
+            locked++;
+        }
+
+    });
+
+    wood.textContent = "×" + (10 + locked);
+    metal.textContent = "×" + (10 + locked);
+
+}
+
+</script>
+
+</body>
+
+</html>

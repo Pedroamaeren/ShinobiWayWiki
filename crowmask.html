@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crow's Mask - ShinobiWay Wiki</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<main>
+<img src="assets/categories/acessories.png" alt="Crow's Mask" class="intro-image">
+
+<div class="fire-header">
+    <h1 class="fire-title">🎭 CROW'S MASK</h1>
+</div>
+
+<div class="fire-box">
+
+    <div class="boss-content">
+
+        <div class="boss-left">
+
+            <h2>Description</h2>
+
+            <p class="material-text">
+                Behind this crow's face, a shinobi buried his name to protect what he loved.
+            </p>
+
+            <h2>Drops From</h2>
+
+            <p class="material-text">
+                <a href="fallencrow.html" class="wiki-link">The Fallen Crow</a> - 15%
+            </p>
+
+            <h2>Buffs</h2>
+
+            <div class="buff-box">
+
+                <h3>Base</h3>
+
+                <ul class="material-list">
+                    <li>+15 Max Chakra</li>
+                </ul>
+
+                <h3 class="ss-rank">S S</h3>
+
+                <ul class="material-list">
+                    <li>+25 Max Chakra</li>
+                    <li>+5 Max Health</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="boss-right">
+
+            <img src="assets/categories/acessories.png" alt="Crow's Mask" class="boss-image">
+
+            <div class="lock-section">
+
+                <img id="lockIcon"
+                     src="assets/categories/lockopen.png"
+                     class="lock-icon"
+                     alt="Lock">
+
+            </div>
+
+            <div class="materials-box">
+
+                <h2>Materials Required in Blacksmith</h2>
+
+                <div class="material-item">
+
+                    <img src="assets/categories/materialal.png">
+
+                    <span>
+    <a href="leather.html" class="wiki-link">
+        Leather
+    </a>
+</span>
+
+                    <strong id="leatherAmount">×5</strong>
+
+                </div>
+
+                <div class="material-item">
+
+                    <img src="assets/categories/metal.png">
+
+                   <span>
+    <a href="scrapmetal.html" class="wiki-link">
+        Scrap Metal
+    </a>
+</span>
+
+                    <strong id="metalAmount">×5</strong>
+
+                </div>
+
+                <div class="material-item">
+
+                    <img src="assets/categories/crowf.png">
+
+                   <span>
+    <a href="crowfragment.html" class="wiki-link">
+        Crow's Chakra Fragment
+    </a>
+</span>
+
+                    <strong id="crowAmount">×1</strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="page-navigation">
+
+    <div class="nav-side">
+        <a href="shadowleaf.html" class="arrow">&larr;</a>
+        <span>Shadow Leaf Ninja Outfit</span>
+    </div>
+
+    <div class="nav-side">
+        <span>Crow's Ninja Outfit</span>
+        <a href="crowninja.html" class="arrow">&rarr;</a>
+    </div>
+
+</div>
+</main>
+
+<button id="theme-toggle">🌙</button>
+
+<script src="js/theme.js"></script>
+
+<script>
+
+let locked = false;
+
+const lock = document.getElementById("lockIcon");
+
+const leather = document.getElementById("leatherAmount");
+const metal = document.getElementById("metalAmount");
+const crow = document.getElementById("crowAmount");
+
+lock.addEventListener("click", () => {
+
+    locked = !locked;
+
+    if(locked){
+
+        lock.src = "assets/categories/lockclosed.png";
+
+        updateMaterial(leather,"×6");
+        updateMaterial(metal,"×6");
+        updateMaterial(crow,"×2");
+
+    }else{
+
+        lock.src = "assets/categories/lockopen.png";
+
+        updateMaterial(leather,"×5");
+        updateMaterial(metal,"×5");
+        updateMaterial(crow,"×1");
+
+    }
+
+});
+
+function updateMaterial(element,newValue){
+
+    element.classList.remove("flash");
+
+    void element.offsetWidth;
+
+    element.innerHTML = newValue;
+
+    element.classList.add("flash");
+
+}
+
+</script>
+</body>
+
+</html>
