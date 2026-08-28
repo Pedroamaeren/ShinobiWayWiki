@@ -2053,3 +2053,6 @@ body.dark .codes-notice{
     margin-left: auto;
     margin-right: auto;
 }
+.rocklee-img {
+    object-position: center 90%;
+}
