@@ -4,6 +4,7 @@
 <head>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8R4BJLLWHL"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -12,14 +13,18 @@
   gtag('config', 'G-8R4BJLLWHL');
   gtag('config', 'G-3QKWFMVK24');
 </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Masked Ninja - ShinobiWay Wiki</title>
-    <link rel="canonical" href="https://shinobiwaywiki.wiki/maskedninja.html">
-    <link rel="stylesheet" href="css/style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Masked Ninja - ShinobiWay Wiki</title>
+
+<link rel="canonical" href="https://shinobiwaywiki.wiki/maskedninja.html">
+<link rel="stylesheet" href="css/style.css">
+
 </head>
 
-<body>
+<body id="masked-ninja-page">
 
 <main>
 
@@ -30,78 +35,123 @@
     </div>
 
     <div class="fire-box">
-        <div class="boss-content">
 
-    <div class="boss-left">
-<h2>Health</h2>
+        <div class="fortune-tabs">
 
-<div class="health-bar">
+            <button id="description-button" class="fortune-tab active">
+                Description
+            </button>
 
-    <div class="health-fill">
-        395 / 395
+            <button id="video-button" class="fortune-tab">
+                Location
+            </button>
+
+        </div>
+
+
+        <div id="fortune-description" class="fortune-section active">
+
+            <div class="boss-content">
+
+                <div class="boss-left">
+
+                    <h2>Health</h2>
+
+                    <div class="health-bar">
+
+                        <div class="health-fill">
+                            395 / 395
+                        </div>
+
+                    </div>
+
+
+                    <h2>Spawn Time</h2>
+
+                    <div class="spawn-box">
+                        8 Minutes
+                    </div>
+
+
+                    <h2>Drops</h2>
+
+                    <ul class="drop-list">
+
+                        <li>
+                            <a href="chakrafragment.html">Chakra Fragment (1x–8x)</a>
+                            <span>40%</span>
+                        </li>
+
+                        <li>
+                            <a href="leafninja.html">Leaf Ninja Outfit</a>
+                            <span>30%</span>
+                        </li>
+
+                        <li>
+                            <a href="shadowleafninja.html">Shadow Leaf Ninja Outfit</a>
+                            <span>1%</span>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="boss-right">
+
+                    <img src="assets/categories/kakashib.png" alt="Boss">
+
+                    <img src="assets/categories/kakashil.png" alt="Location">
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div id="fortune-video" class="fortune-section">
+
+            <h2 class="section-title">The Masked Ninja Location</h2>
+
+            <div class="fortune-video-container">
+
+                <iframe
+                    src="https://www.youtube.com/embed/KRU3X_gcCjc?origin=http://127.0.0.1:5500"
+                    title="The Masked Ninja Location"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </div>
+
     </div>
 
-</div>
 
+    <div class="page-navigation">
 
-<h2>Spawn Time</h2>
+        <div class="nav-side">
+            <a href="kidnoruto.html" class="arrow">&#8592;</a>
+            <span>Kid Noruto</span>
+        </div>
 
-<div class="spawn-box">
-    8 Minutes
-</div>
-
-
-<h2>Drops</h2>
-
-<ul class="drop-list">
-
-    <li>
-        <a href="chakrafragment.html">Chakra Fragment (1x–8x)</a>
-        <span>40%</span>
-    </li>
-
-    <li>
-        <a href="leafninja.html">Leaf Ninja Outfit</a>
-        <span>30%</span>
-    </li>
-
-    <li>
-        <a href="shadowleafninja.html">Shadow Leaf Ninja Outfit</a>
-        <span>1%</span>
-    </li>
-
-</ul>
-    </div>
-
-    <div class="boss-right">
-
-        <img src="assets/categories/kakashib.png" alt="Boss">
-
-        <img src="assets/categories/kakashil.png" alt="Location">
+        <div class="nav-side">
+            <span>The Fallen Crow</span>
+            <a href="fallenCrow.html" class="arrow">&#8594;</a>
+        </div>
 
     </div>
 
-</div>
-
-    </div>
-<div class="page-navigation">
-
-    <div class="nav-side">
-        <a href="kidnoruto.html" class="arrow">&#8592;</a>
-        <span>Kid Noruto</span>
-    </div>
-
-    <div class="nav-side">
-        <span>The Fallen Crow</span>
-        <a href="fallenCrow.html" class="arrow">&#8594;</a>
-    </div>
-
-</div>
 </main>
+
 
 <button id="theme-toggle">🌙</button>
 
 <script src="js/theme.js"></script>
+<script src="js/fortune.js"></script>
 
 </body>
 

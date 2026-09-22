@@ -12,14 +12,18 @@
   gtag('config', 'G-8R4BJLLWHL');
   gtag('config', 'G-3QKWFMVK24');
 </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evil Fox Raid - ShinobiWay Wiki</title>
-    <link rel="canonical" href="https://shinobiwaywiki.wiki/efraid.html">
-    <link rel="stylesheet" href="css/style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Evil Fox Raid - ShinobiWay Wiki</title>
+
+<link rel="canonical" href="https://shinobiwaywiki.wiki/efraid.html">
+<link rel="stylesheet" href="css/style.css">
+
 </head>
 
-<body>
+<body id="evil-fox-raid-page">
 
 <main>
 
@@ -31,75 +35,114 @@
 
     <div class="fire-box">
 
-        <div class="boss-content">
+        <div class="fortune-tabs">
 
-            <div class="boss-left">
+            <button id="description-button" class="fortune-tab active">
+                Description
+            </button>
 
-                <h2 class="section-title">Evil Fox Raid</h2>
+            <button id="video-button" class="fortune-tab">
+                Location
+            </button>
 
-                <p class="material-text">
+        </div>
 
-                    The Evil Fox Raid appears every <strong>2 hours</strong>
-                    (always on the even hours shown on the clock in the
-                    top-right corner of the screen—e.g. 02:00, 04:00, 06:00, etc.),
-                    and you have <strong>30 minutes</strong> to defeat it.
 
-                    <br><br>
+        <div id="fortune-description" class="fortune-section active">
 
-                    To play more than once, run the Raid on a private server.
-                    When the Raid ends, leave and re-enter to run it again.
+            <div class="boss-content">
 
-                    <br><br>
+                <div class="boss-left">
 
-                    Entering the Raid requires
+                    <h2 class="section-title">Evil Fox Raid</h2>
 
-                    <a href="evilfoxfragment.html" class="wiki-link">
-                        Evil Fox Spirit's Chakra Fragment
-                    </a>.
+                    <p class="material-text">
 
-                    <br><br>
+                        The Evil Fox Raid appears every <strong>2 hours</strong>
+                        (always on the even hours shown on the clock in the
+                        top-right corner of the screen—e.g. 02:00, 04:00, 06:00, etc.),
+                        and you have <strong>30 minutes</strong> to defeat it.
 
-                    The Evil Fox Spirit's health increases with each
-                    additional player.
+                        <br><br>
 
-                </p>
+                        To play more than once, run the Raid on a private server.
+                        When the Raid ends, leave and re-enter to run it again.
 
-                <h2>Health (1 Player)</h2>
+                        <br><br>
 
-                <div class="health-bar">
+                        Entering the Raid requires
 
-                    <div class="health-fill">
-                        3095 / 3095
+                        <a href="evilfoxfragment.html" class="wiki-link">
+                            Evil Fox Spirit's Chakra Fragment
+                        </a>.
+
+                        <br><br>
+
+                        The Evil Fox Spirit's health increases with each
+                        additional player.
+
+                    </p>
+
+
+                    <h2>Health (1 Player)</h2>
+
+                    <div class="health-bar">
+
+                        <div class="health-fill">
+                            3095 / 3095
+                        </div>
+
                     </div>
+
+
+                    <h2>Drops</h2>
+
+                    <ul class="drop-list">
+
+                        <li>
+
+                            <a href="spiritfox.html">
+                                Evil Fox Spirit Mode
+                            </a>
+
+                            <span>5%</span>
+
+                        </li>
+
+                    </ul>
 
                 </div>
 
-                <h2>Drops</h2>
 
-                <ul class="drop-list">
+                <div class="boss-right">
 
-                    <li>
+                    <img src="assets/categories/raidfox1.png" alt="Raid">
 
-                        <a href="spiritfox.html">
-                            Evil Fox Spirit Mode
-                        </a>
+                    <img src="assets/categories/raidfox2.png" alt="Raid">
 
-                        <span>5%</span>
+                    <img src="assets/categories/utc.png" alt="UTC Clock">
 
-                    </li>
-
-                </ul>
+                </div>
 
             </div>
 
-            <div class="boss-right">
+        </div>
 
-                <img src="assets/categories/raidfox1.png" alt="Raid">
 
-                <img src="assets/categories/raidfox2.png" alt="Raid">
+        <div id="fortune-video" class="fortune-section">
 
-                <img src="assets/categories/utc.png" alt="UTC Clock">
-                
+            <h2 class="section-title">Evil Fox Raid Location</h2>
+
+            <div class="fortune-video-container">
+
+                <iframe
+                    src="https://www.youtube.com/embed/_BZ4JUL6SVU?origin=http://127.0.0.1:5500"
+                    title="Evil Fox Raid Location"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+
             </div>
 
         </div>
@@ -108,9 +151,12 @@
 
 </main>
 
+
 <button id="theme-toggle">🌙</button>
 
 <script src="js/theme.js"></script>
+<script src="js/fortune.js"></script>
 
+</body>
 
 </html>

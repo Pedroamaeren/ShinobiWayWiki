@@ -7,19 +7,24 @@
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+
   gtag('js', new Date());
 
   gtag('config', 'G-8R4BJLLWHL');
   gtag('config', 'G-3QKWFMVK24');
 </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blacksmith - ShinobiWay Wiki</title>
-    <link rel="canonical" href="https://shinobiwaywiki.wiki/blacksmith.html">
-    <link rel="stylesheet" href="css/style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Blacksmith - ShinobiWay Wiki</title>
+
+<link rel="canonical" href="https://shinobiwaywiki.wiki/blacksmith.html">
+<link rel="stylesheet" href="css/style.css">
+
 </head>
 
-<body>
+<body id="blacksmith-page">
 
 <main>
 
@@ -31,73 +36,108 @@
 
     <div class="fire-box">
 
-        <div class="boss-content">
+        <div class="blacksmith-tabs">
 
-            <!-- ESQUERDA -->
+            <button id="description-button" class="blacksmith-tab active">
+                Description
+            </button>
 
-            <div class="boss-left">
+            <button id="video-button" class="blacksmith-tab">
+                Location
+            </button>
 
-                <h2 class="section-title">Blacksmith</h2>
+        </div>
 
-                <p class="material-text">
+        <div id="blacksmith-description" class="blacksmith-section active">
 
-                    The Blacksmith is an
-NPC
-                    who enhances the stats of weapons or accessories.
+            <div class="boss-content">
 
-                    <br><br>
+                <div class="boss-left">
 
-                    Specific
-                    <a href="materials.html" class="wiki-link">
-                        <span class="highlight-word">Materials</span>
+                    <h2 class="section-title">Blacksmith</h2>
+
+                    <p class="material-text">
+
+                        The Blacksmith is a
+                        <strong class="miscellaneous-npc">MISCELLANEOUS NPC</strong>
+                        who enhances the stats of weapons or accessories.
+
+                        <br><br>
+
+                        Specific
+                        <a href="materials.html" class="wiki-link">
+                            <span class="highlight-word">Materials</span>
+                        </a>
+                        are required to upgrade each piece of equipment.
+
+                    </p>
+
+                    <a href="weapons.html" class="guide-link">
+
+                        <strong>⚔ Weapons</strong>
+
+                        <div class="guide-text">
+                            View Weapon Upgrade Materials
+                            <span class="arrow-move">→</span>
+                        </div>
+
                     </a>
-                    are required to upgrade each piece of equipment.
 
-                </p>
+                    <a href="accessories.html" class="guide-link">
 
+                        <strong>🛡 Accessories</strong>
 
-                <a href="weapons.html" class="guide-link">
+                        <div class="guide-text">
+                            View Accessory Upgrade Materials
+                            <span class="arrow-move">→</span>
+                        </div>
 
-                    <strong>⚔ Weapons</strong>
+                    </a>
 
-                    <div class="guide-text">
+                </div>
 
-                        View Weapon Upgrade Materials
+                <div class="boss-right">
 
-                        <span class="arrow-move">→</span>
+                    <img src="assets/categories/blacksmith2.jpeg" alt="Blacksmith">
 
-                    </div>
+                    <img src="assets/categories/ferreiro1.png" alt="Blacksmith Location">
 
-                </a>
-
-
-                <a href="accessories.html" class="guide-link">
-
-                    <strong>🛡 Accessories</strong>
-
-                    <div class="guide-text">
-
-                        View Accessory Upgrade Materials
-
-                        <span class="arrow-move">→</span>
-
-                    </div>
-
-                </a>
+                </div>
 
             </div>
 
+        </div>
 
-            <!-- DIREITA -->
+        <div id="blacksmith-video" class="blacksmith-section">
 
-            <div class="boss-right">
+            <h2 class="section-title">Blacksmith Guide</h2>
 
-                <img src="assets/categories/blacksmith2.jpeg" alt="Blacksmith">
+            <div class="blacksmith-video-container">
 
-                <img src="assets/categories/ferreiro1.png" alt="Blacksmith Location">
+                <iframe
+                    src="https://www.youtube.com/embed/f86D12oi0EM"
+                    title="Blacksmith Location"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
 
             </div>
 
+        </div>
+
+    </div>
+
+    <div class="page-navigation">
+
+        <div class="nav-side">
+            <a href="fortune.html" class="arrow">&larr;</a>
+            <span>Fortune Trader</span>
+        </div>
+
+        <div class="nav-side">
+            <span>Guest</span>
+            <a href="guest.html" class="arrow">&rarr;</a>
         </div>
 
     </div>
@@ -107,6 +147,7 @@ NPC
 <button id="theme-toggle">🌙</button>
 
 <script src="js/theme.js"></script>
+<script src="js/blacksmith.js"></script>
 
 </body>
 
