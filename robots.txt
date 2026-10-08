@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pedroamaeren.github.io/ShinobiWayWiki/sitemap.xml
+Sitemap: https://shinobiwaywiki.wiki/sitemap.xml
