@@ -2656,3 +2656,58 @@ body.dark #guest-page .guest-speaker,
 body.dark #guest-page .guest-text {
     color: white !important;
 }
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    background: #6b4423;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10000;
+    box-shadow: 0 8px 20px rgba(0,0,0,.4);
+    transition: .25s;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.08);
+}
+
+.navigation-buttons {
+    position: fixed;
+    top: 85px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 9999;
+}
+
+.navigation-buttons button {
+    width: 55px;
+    height: 55px;
+    border: none;
+    border-radius: 50%;
+    background: #6b4423 !important;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,.4);
+    transition: .25s;
+}
+
+.navigation-buttons button:hover {
+    transform: scale(1.08);
+}
+
+.navigation-buttons button img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
