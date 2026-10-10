@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const button = document.getElementById("theme-toggle");
+    const themeSound = new Audio("assets/theme.mp3");
+    themeSound.volume = 0.3;
 
     if (localStorage.getItem("theme") === "dark") {
         document.body.classList.add("dark");
@@ -17,6 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 localStorage.setItem("theme", "light");
             }
+
+            themeSound.currentTime = 0;
+            themeSound.play().catch(() => {});
 
         });
 

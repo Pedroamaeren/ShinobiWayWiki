@@ -265,4 +265,4 @@ themeObserver.observe(document.body, {
 
 updateGuestTextColor();
 
-renderDialogue("start");
+renderDialogue("start"); 

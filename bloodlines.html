@@ -33,34 +33,66 @@
         <h1 class="fire-title">LINEAGES</h1>
     </div>
 
-<div class="fire-box lineage-drop-box">
-    <h2>Drop Rates</h2>
+<div class="lineage-rarity-chart">
+    <h2 class="lineage-rarity-title">Drop Rates</h2>
+    <p class="lineage-rarity-description">Chance of obtaining each rarity</p>
 
-        <div class="drop-rates">
-
-            <div class="drop-rate common">
-                <span>COMMON</span>
-                <strong>60%</strong>
-            </div>
-
-            <div class="drop-rate rare">
-                <span>RARE</span>
-                <strong>30%</strong>
-            </div>
-
-            <div class="drop-rate epic">
-                <span>EPIC</span>
-                <strong>9%</strong>
-            </div>
-
-            <div class="drop-rate legendary">
-                <span>LEGENDARY</span>
-                <strong>1%</strong>
-            </div>
-
+    <div class="lineage-rarity-bar">
+        <div class="lineage-rarity-segment lineage-rarity-segment--common" style="width: 60%;" data-rarity="Common">
+            <span></span>
+            <span class="lineage-rarity-tooltip">Common</span>
         </div>
 
+        <div class="lineage-rarity-segment lineage-rarity-segment--rare" style="width: 30%;" data-rarity="Rare">
+            <span></span>
+            <span class="lineage-rarity-tooltip">Rare</span>
+        </div>
+
+        <div class="lineage-rarity-segment lineage-rarity-segment--epic" style="width: 9%;" data-rarity="Epic">
+            <span></span>
+            <span class="lineage-rarity-tooltip">Epic</span>
+        </div>
+
+        <div class="lineage-rarity-segment lineage-rarity-segment--legendary" style="width: 1%;" data-rarity="Legendary">
+            <span class="lineage-rarity-tooltip">Legendary</span>
+        </div>
     </div>
+
+    <div class="lineage-rarity-legend">
+        <div class="lineage-rarity-item">
+            <span class="lineage-rarity-swatch lineage-rarity-swatch--common"></span>
+            <div class="lineage-rarity-item-content">
+                <span class="lineage-rarity-name">Common</span>
+                <strong class="lineage-rarity-percentage">60%</strong>
+            </div>
+        </div>
+
+        <div class="lineage-rarity-item">
+            <span class="lineage-rarity-swatch lineage-rarity-swatch--rare"></span>
+            <div class="lineage-rarity-item-content">
+                <span class="lineage-rarity-name">Rare</span>
+                <strong class="lineage-rarity-percentage">30%</strong>
+            </div>
+        </div>
+
+        <div class="lineage-rarity-item">
+            <span class="lineage-rarity-swatch lineage-rarity-swatch--epic"></span>
+            <div class="lineage-rarity-item-content">
+                <span class="lineage-rarity-name">Epic</span>
+                <strong class="lineage-rarity-percentage">9%</strong>
+            </div>
+        </div>
+
+        <div class="lineage-rarity-item">
+            <span class="lineage-rarity-swatch lineage-rarity-swatch--legendary"></span>
+            <div class="lineage-rarity-item-content">
+                <span class="lineage-rarity-name">Legendary</span>
+                <strong class="lineage-rarity-percentage">1%</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 </div>
     <div class="fire-box">
